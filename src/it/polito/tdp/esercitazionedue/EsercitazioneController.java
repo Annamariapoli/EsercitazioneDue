@@ -56,8 +56,8 @@ public class EsercitazioneController {
     	long startTime= System.nanoTime();                                        //memorizzo il tempo attuale in una variabile
     	String s =   txtElimina.getText();                                       //memorizzo cio che utente vuole eliminare in una variabile
     	model.eliminaStringa(s);                                                //elimino quella stringa
-    	long finish = System.nanoTime()- startTime;                            //mi dice quanto è durata l'operazione
-    	labelTime.setText(String.valueOf(finish));                            //metto nella textFiel la variabile finish 
+    	long end = System.nanoTime()- startTime;                            //mi dice quanto è durata l'operazione
+    	labelTime.setText(String.valueOf(end));                            //metto nella textFiel la variabile finish 
     	labelContatore.setText(String.valueOf(model.elementiPresentiInLista()));    
     }
 
@@ -66,8 +66,8 @@ public class EsercitazioneController {
     	long startTime= System.nanoTime();
     	int numeroStringhe = Integer.parseInt(txtGenera.getText());            //utente inserisce un numero di stringhe da generare
     	model.generaStringhe(numeroStringhe);                                 //ERRORE : PERCHE??
-    	long finish = System.nanoTime()- startTime;   
-    	labelTime.setText(String.valueOf(finish));
+    	long end = System.nanoTime()- startTime;   
+    	labelTime.setText(String.valueOf(end));
     	labelContatore.setText(String.valueOf(model.elementiPresentiInLista()));           
 
     }
@@ -81,8 +81,8 @@ public class EsercitazioneController {
     	}
     	int pos = Integer.parseInt(txtPosizione.getText());              //non faccio controlli??
     	model.inserisciStringa(s, pos);
-        long finish = System.nanoTime()- startTime;
-    	labelTime.setText("Il tempo impiegato è : " +finish+ "\n");             //modo altrnativo al precedente  ??
+        long end = System.nanoTime()- startTime;
+    	labelTime.setText("Il tempo impiegato è : " +end+ "\n");             //modo altrnativo al precedente  ??
     	labelContatore.setText(String.valueOf(model.elementiPresentiInLista()));
 
     }
