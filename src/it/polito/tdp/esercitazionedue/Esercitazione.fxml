@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.esercitazionedue.EsercitazioneController">
+   <top>
+      <Label text="Esercitazione 2" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Genera elementi:" />
+                  <TextField fx:id="txtGenera" />
+                  <Button fx:id="btnGenera" mnemonicParsing="false" onAction="#doGenera" text="Genera" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Nuovo  elemento" />
+                  <TextField fx:id="txtNuovo" />
+                  <Label text="Posizione" />
+                  <TextField fx:id="txtPosizione" />
+                  <Button fx:id="btnInserisci" mnemonicParsing="false" onAction="#doInserisci" text="Inserisci" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" top="25.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Elimina elemento:" />
+                  <TextField fx:id="txtElimina" />
+                  <Button fx:id="btnElimina" mnemonicParsing="false" onAction="#doElimina" text="Elimina" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Contatore" />
+                  <TextField fx:id="labelContatore" editable="false" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Time" />
+                  <TextField fx:id="labelTime" editable="false" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
