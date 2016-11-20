@@ -12,7 +12,7 @@ import javafx.scene.control.TextField;
 
 public class EsercitazioneController {
 	
-	private Model model;
+	private Model model = new Model();
 	
 	public void setModel(Model model){
 		this.model=model;
