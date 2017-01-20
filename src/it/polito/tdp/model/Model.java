@@ -53,9 +53,7 @@ public class Model {
 		 model.stampaLista();
 		 
 		// model.elementiPresentiInLista();
-		 
-		
-	//	model.generaStringhe(4);
+		model.generaStringhe(4);
 		
 	}
 }

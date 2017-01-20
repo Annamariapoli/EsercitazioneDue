@@ -56,7 +56,7 @@ public class EsercitazioneController {
     	long startTime= System.nanoTime();                                        //memorizzo il tempo attuale in una variabile
     	String s =   txtElimina.getText();                                       //memorizzo cio che utente vuole eliminare in una variabile
     	model.eliminaStringa(s);                                                //elimino quella stringa
-    	long end = System.nanoTime()- startTime;                            //mi dice quanto è durata l'operazione
+    	long end = System.nanoTime()- startTime;                               //mi dice quanto è durata l'operazione
     	labelTime.setText(String.valueOf(end));                            //metto nella textFiel la variabile finish 
     	labelContatore.setText(String.valueOf(model.elementiPresentiInLista()));    
     }
